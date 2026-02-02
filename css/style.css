@@ -182,12 +182,7 @@ body::-webkit-scrollbar{
 }
 
 
-.profile-img{
-  height: 700px;
-  object-fit: cover;
-  object-position: top;
-  border-radius: 80px;
-}
+
 
 /*
 1. Add the correct height in Firefox.
@@ -1687,4 +1682,11 @@ p, .serif-text {
     font-size: 6rem;
     line-height: 1;
   }
+}
+
+.profile-img{
+  height: 700px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 80px;
 }
