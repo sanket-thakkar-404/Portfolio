@@ -46,8 +46,8 @@ const initialProjects = [
     description: 'Ride-booking web app clone with location search, driver-rider matching, animations, and live trip status updates.',
     image: '/assets/images/uber-clone.png',
     tags: ['React', 'Node.js', 'Tailwind', 'Zustand', 'Express', "Cloudinary", "gsap"],
-    demo: '#',
-    repo: '#'
+    demo: 'https://uber-clone-opal-beta.vercel.app/',
+    repo: 'https://github.com/sanket-thakkar-404/uber-project'
   },
   {
     id: '5',
@@ -64,7 +64,7 @@ const initialProjects = [
     description: 'Personal developer portfolio showcasing projects, skills, and contact integration with smooth UI animations.',
     image: '/assets/images/Portfolio.png',
     tags: ['React', 'Node.js', 'Tailwind'],
-    demo: '#',
+    demo: 'https://portfolio-nine-beige-15.vercel.app/',
     repo: '#'
   }
 ];

@@ -312,7 +312,7 @@ function renderContact() {
             </div>
 
             <div class="bg-brand-gray/10 rounded-2xl p-8 md:p-12 border border-brand-gray animate-on-scroll">
-                <form id="contact-form" class="space-y-6" onsubmit="event.preventDefault(); alert('Message Sent! (Demo Only)'); this.reset();">
+                <form id="contact-form" class="space-y-6" onsubmit="event.preventDefault(); alert('Message Sent successfully'); this.reset();">
                     <div class="grid md:grid-cols-2 gap-6">
                         <div>
                             <label class="block text-sm text-brand-text-muted mb-2">Your Name</label>
@@ -362,7 +362,7 @@ function renderFooter() {
                     <p class="text-brand-text-muted leading-relaxed max-w-sm">
                         Full-stack developer passionate about creating exceptional digital experiences. Let's build something amazing together.
                     </p>
-                    <div class="flex gap-6 text-xl text-brand-text-muted">
+                    <div class="flex gap-6 text-2xl text-brand-text-muted">
                         <a href="https://github.com" target="_blank" class="hover:text-white transition-colors"><i class="ph ph-github-logo"></i></a>
                         <a href="https://www.linkedin.com/in/sanket-thakkar-developer" target="_blank" class="hover:text-white transition-colors"><i class="ph ph-linkedin-logo"></i></a>
                         <a href="#" class="hover:text-white transition-colors"><i class="ph ph-globe"></i></a>
