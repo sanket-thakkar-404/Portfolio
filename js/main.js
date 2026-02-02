@@ -364,9 +364,9 @@ function renderFooter() {
                     </p>
                     <div class="flex gap-6 text-xl text-brand-text-muted">
                         <a href="https://github.com" target="_blank" class="hover:text-white transition-colors"><i class="ph ph-github-logo"></i></a>
-                        <a href="https://linkedin.com" target="_blank" class="hover:text-white transition-colors"><i class="ph ph-linkedin-logo"></i></a>
+                        <a href="https://www.linkedin.com/in/sanket-thakkar-developer" target="_blank" class="hover:text-white transition-colors"><i class="ph ph-linkedin-logo"></i></a>
                         <a href="#" class="hover:text-white transition-colors"><i class="ph ph-globe"></i></a>
-                        <a href="#" class="hover:text-white transition-colors"><i class="ph ph-instagram-logo"></i></a>
+                        <a href="https://www.instagram.com/sanket_thakkar_1/" class="hover:text-white transition-colors"><i class="ph ph-instagram-logo"></i></a>
                     </div>
                 </div>
 
@@ -375,8 +375,9 @@ function renderFooter() {
                     <h4 class="text-lg font-bold mb-6">Quick Links</h4>
                     <ul class="space-y-4 text-brand-text-muted">
                         <li><a href="index.html#home" class="hover:text-brand-accent transition-colors">Home</a></li>
-                        <li><a href="index.html#about" class="hover:text-brand-accent transition-colors">About</a></li>
-                        <li><a href="projects.html" class="hover:text-brand-accent transition-colors">Projects</a></li>
+                        <li><a href="/about.html" class="hover:text-brand-accent transition-colors">About</a></li>
+                        <li><a href="/skills.html" class="hover:text-brand-accent transition-colors">Skills</a></li>
+                        <li><a href="/projects.html" class="hover:text-brand-accent transition-colors">Projects</a></li>
                         <li><a href="index.html#contact" class="hover:text-brand-accent transition-colors">Contact</a></li>
                     </ul>
                 </div>
