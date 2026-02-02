@@ -5,7 +5,18 @@
 // Mobile Menu Toggle
 const menuBtn = document.getElementById('menu-btn');
 const mobileMenu = document.getElementById('mobile-menu');
+const heroImg = document.getElementById("heroImg");
 
+function setHeroHeight() {
+  if (window.innerWidth >= 768) {
+    heroImg.style.height = "700px";
+  } else {
+    heroImg.style.height = "400px";
+  }
+}
+
+// page load pe
+setHeroHeight();
 menuBtn.addEventListener('click', () => {
     mobileMenu.classList.toggle('-translate-y-[150%]');
 });
@@ -211,7 +222,7 @@ function renderProjects(limit = null) {
                 <div class="flex justify-between items-end mb-12 animate-on-scroll">
                     <div>
                         <span class="text-brand-accent text-sm block mb-2 font-sans tracking-widest uppercase">Portfolio</span>
-                        <h2 class="text-3xl md:text-5xl font-bold">My Recent Project<br>That I Done.</h2>
+                        <h2 class="text-3xl md:text-5xl font-bold">Recent Project</h2>
                     </div>
                     <a href="projects.html" class="hidden md:inline-flex items-center gap-2 text-brand-text-muted hover:text-white transition-colors">
                         See All Projects <i class="ph ph-arrow-right"></i>
