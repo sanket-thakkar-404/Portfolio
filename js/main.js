@@ -7,16 +7,7 @@ const menuBtn = document.getElementById('menu-btn');
 const mobileMenu = document.getElementById('mobile-menu');
 const heroImg = document.getElementById("heroImg");
 
-// function setHeroHeight() {
-//   if (window.innerWidth >= 768) {
-//     heroImg.style.height = "700px";
-//   } else {
-//     heroImg.style.height = "400px";
-//   }
-// }
 
-// page load pe
-// setHeroHeight();
 menuBtn.addEventListener('click', () => {
     mobileMenu.classList.toggle('-translate-y-[150%]');
 });

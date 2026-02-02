@@ -187,5 +187,17 @@
 
     <script src="./js/data.js"></script>
     <script src="./js/main.js"></script>
+    <script>
+      function setHeroHeight() {
+        if (window.innerWidth >= 768) {
+          heroImg.style.height = "700px";
+        } else {
+          heroImg.style.height = "400px";
+        }
+      }
+
+      // page load pe
+      setHeroHeight();
+    </script>
   </body>
 </html>
