@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me | Sanket Thakkar</title>
+    <link href="./css/style.css" rel="stylesheet" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+
+  <body class="overflow-x-hidden text-white bg-brand-dark">
+    <!-- Navbar -->
+    <nav
+      class="fixed top-0 left-0 z-50 w-full transition-all duration-300 border-b bg-brand-dark/90 backdrop-blur-md border-brand-gray"
+      id="navbar"
+    >
+      <div
+        class="container flex items-center justify-between px-6 py-2 mx-auto"
+      >
+        <a href="index.html" class="flex items-center gap-2 text-2xl font-bold">
+          Portfolio<span class="text-brand-accent">.</span>
+        </a>
+
+        <div
+          class="items-center hidden gap-8 text-sm font-medium md:flex text-brand-text-muted"
+        >
+          <a href="index.html" class="transition-colors hover:text-white"
+            >Home</a
+          >
+          <a href="#" class="text-white transition-colors">About</a>
+          <a href="projects.html" class="transition-colors hover:text-white"
+            >Projects</a
+          >
+          <a href="skills.html" class="transition-colors hover:text-white"
+            >Skills</a
+          >
+          <a
+            href="index.html#contact"
+            class="transition-colors hover:text-white"
+            >Contact</a
+          >
+        </div>
+
+        <a
+          href="index.html#contact"
+          class="items-center justify-center hidden px-6 py-2 text-sm font-medium transition-all border rounded-full bg-brand-accent md:inline-flex border-brand-gray hover:bg-brand-gray hover:scale-105"
+        >
+          Hire Me
+        </a>
+
+        <!-- Mobile Menu Button -->
+        <button class="text-2xl md:hidden" id="menu-btn">
+          <i class="ph ph-list"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        class="md:hidden absolute top-full left-0 w-full bg-brand-dark border-b border-brand-gray py-4 px-6 flex flex-col gap-4 transform -translate-y-[150%] transition-transform duration-300"
+        id="mobile-menu"
+      >
+        <a href="index.html" class="block py-2">Home</a>
+        <a href="#" class="block py-2 text-white">About</a>
+        <a href="projects.html" class="block py-2">Projects</a>
+        <a href="skills.html" class="block py-2">Skills</a>
+        <a href="index.html#contact" class="block py-2">Contact</a>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header
+      class="container h-full px-6 pt-20 pb-12 mx-auto text-center animate-on-scroll"
+    >
+      <span
+        class="block mb-2 font-sans text-sm tracking-widest uppercase text-brand-accent"
+        >My Story</span
+      >
+      <h1 class="mb-6 text-4xl font-bold md:text-6xl">About Me</h1>
+      <p
+        class="max-w-xl mx-auto mt-20 font-serif text-lg italic text-brand-text-muted"
+      >
+        "Coding is not just about logic; it's about crafting experiences that
+        matter."
+      </p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container min-h-screen px-6 pb-20 mx-auto space-y-24">
+      <!-- Bio Section -->
+      <section class="grid items-center gap-12 md:grid-cols-2">
+        <div class="relative pt-10 animate-on-scroll">
+          <div
+            class="aspect-[4/5] rounded-2xl overflow-hidden border border-brand-gray/50"
+          >
+            <img
+              src="./assets/images/hero-person.png"
+              alt="Sanket Thakkar"
+              class="object-cover w-full profile-img"
+            />
+          </div>
+          <div
+            class="absolute hidden p-6 border shadow-xl -bottom-6 -right-6 bg-brand-dark border-brand-gray rounded-xl md:block"
+          >
+            <p class="mb-1 text-4xl font-bold text-brand-accent">1+</p>
+            <p class="text-sm text-brand-text-muted">Year of<br />Experience</p>
+          </div>
+        </div>
+        <div class="space-y-6 animate-on-scroll">
+          <h2 class="text-3xl font-bold">Hello, I'm Sanket.</h2>
+          <div
+            class="space-y-4 font-serif text-lg leading-relaxed text-brand-text-muted"
+          >
+            <p>
+              I am a passionate Full Stack Developer based in Raipur,
+              Chhattisgarh. My journey into the world of technology began with a
+              curiosity for how things work on the internet, which quickly
+              evolved into a career building robust web applications.
+            </p>
+            <p>
+              Specializing in the MERN stack (MongoDB, Express.js, React,
+              Node.js), I love turning complex problems into simple, beautiful,
+              and intuitive interface designs. I believe that good code is like
+              a well-written poem—clean, efficient, and meaningful.
+            </p>
+            <p>
+              When I'm not coding, you can find me exploring new technologies,
+              contributing to open source, or sipping coffee while brainstorming
+              my next big idea.
+            </p>
+          </div>
+          <div class="pt-4">
+            <a
+              href="./assets/resume.pdf"
+              download
+              class="inline-flex items-center gap-2 px-8 py-3 font-bold text-white transition-all rounded-full bg-brand-accent hover:bg-white hover:text-black"
+            >
+              <i class="ph-bold ph-download-simple"></i>
+              Download Resume
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Timeline / Journey -->
+      <section class="max-w-4xl mx-auto mb-20">
+        <div class="mb-16 text-center animate-on-scroll">
+          <h2 class="mb-4 text-3xl font-bold">My Journey</h2>
+          <p class="text-brand-text-muted">
+            A timeline of my education and professional growth.
+          </p>
+        </div>
+
+        <div
+          class="relative ml-4 space-y-12 border-l border-brand-gray/30 md:ml-0 md:pl-0"
+        >
+          <!-- Item 1 -->
+          <div class="relative pl-12 md:pl-0 animate-on-scroll">
+            <div
+              class="absolute hidden w-4 h-4 -translate-x-1/2 border-4 rounded-full md:block left-1/2 bg-brand-accent border-brand-dark"
+            ></div>
+            <div
+              class="absolute left-0 w-4 h-4 -translate-x-1/2 border-4 rounded-full md:hidden bg-brand-accent border-brand-dark"
+            ></div>
+
+            <div class="items-center md:grid md:grid-cols-2 md:gap-16">
+              <div class="md:text-right">
+                <h3 class="text-xl font-bold text-white">
+                  Sheryians Coding School
+                </h3>
+                <p class="font-medium text-brand-accent">
+                  Full Stack Web Development
+                </p>
+              </div>
+              <div class="mt-2 md:mt-0">
+                <span
+                  class="inline-block px-3 py-1 mb-2 text-xs rounded-full bg-brand-gray/20 text-brand-text-muted"
+                  >2025 - Present</span
+                >
+                <p class="text-brand-text-muted">
+                  Learning and building real-world projects using the MERN stack
+                  (MongoDB, Express.js, React, Node.js). Gaining hands-on
+                  experience in REST APIs, authentication, dashboards, and
+                  full-stack application architecture.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="relative pl-12 md:pl-0 nimate-on-scroll">
+            <div
+              class="absolute hidden w-4 h-4 -translate-x-1/2 border-4 rounded-full md:block left-1/2 bg-brand-gray border-brand-dark"
+            ></div>
+            <div
+              class="absolute left-0 w-4 h-4 -translate-x-1/2 border-4 rounded-full md:hidden bg-brand-gray border-brand-dark"
+            ></div>
+
+            <div class="items-center md:grid md:grid-cols-2 md:gap-16">
+              <div class="md:order-2">
+                <h3 class="text-xl font-bold text-white">
+                  Bachelor of Business Administration
+                </h3>
+                <p class="font-medium text-brand-accent">BBA</p>
+              </div>
+
+              <div class="mt-2 md:text-right md:mt-0 md:order-1">
+                <span
+                  class="inline-block px-3 py-1 mb-2 text-xs rounded-full bg-brand-gray/20 text-brand-text-muted"
+                >
+                  2023 - 2026
+                </span>
+
+                <p class="text-brand-text-muted">
+                  Studying core business subjects including Marketing, Finance,
+                  Management, and Entrepreneurship while developing analytical
+                  and problem-solving skills.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Fun Facts -->
+      <section class="mt-40 mb-50 pb-30 animate-on-scroll">
+        <h2 class="mb-12 text-3xl font-bold text-center">Beyond Code</h2>
+        <div class="grid gap-6 md:grid-cols-3">
+          <div
+            class="p-6 text-center transition-colors border bg-brand-gray/10 rounded-xl border-brand-gray hover:border-brand-accent"
+          >
+            <i class="mb-4 text-4xl ph-duotone ph-coffee text-brand-accent"></i>
+            <h3 class="mb-2 text-xl font-bold">Coffee Enthusiast</h3>
+            <p class="text-sm text-brand-text-muted">
+              Fueled by caffeine and curiosity.
+            </p>
+          </div>
+          <div
+            class="p-6 text-center transition-colors border bg-brand-gray/10 rounded-xl border-brand-gray hover:border-brand-accent"
+          >
+            <i
+              class="mb-4 text-4xl ph-duotone ph-game-controller text-brand-accent"
+            ></i>
+            <h3 class="mb-2 text-xl font-bold">Gamer</h3>
+            <p class="text-sm text-brand-text-muted">
+              Strategic thinking mostly applied in FPS games.
+            </p>
+          </div>
+          <div
+            class="p-6 text-center transition-colors border bg-brand-gray/10 rounded-xl border-brand-gray hover:border-brand-accent"
+          >
+            <i class="mb-4 text-4xl ph-duotone ph-camera text-brand-accent"></i>
+            <h3 class="mb-2 text-xl font-bold">Photography</h3>
+            <p class="text-sm text-brand-text-muted">
+              Capturing moments when I'm away from the screen.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-container"></div>
+
+    <script src="./js/data.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

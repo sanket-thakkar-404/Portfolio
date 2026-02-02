@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+}
+
+body {
+  @apply bg-brand-dark text-white font-sans;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-sans font-bold;
+}
+
+p, .serif-text {
+  @apply font-serif;
+}

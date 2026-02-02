@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login | Portfolio</title>
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body class="bg-brand-dark text-white h-screen flex items-center justify-center">
+
+    <div class="w-full max-w-md p-8 bg-brand-gray/20 border border-brand-gray rounded-2xl">
+        <h2 class="text-2xl font-bold mb-6 text-center">Admin Login</h2>
+        <form id="login-form" class="space-y-4">
+            <div>
+                <label class="block text-sm text-brand-text-muted mb-2">Username</label>
+                <input type="text" id="username"
+                    class="w-full bg-brand-dark border border-brand-gray rounded-lg p-3 focus:border-brand-accent outline-none"
+                    placeholder="admin">
+            </div>
+            <div>
+                <label class="block text-sm text-brand-text-muted mb-2">Password</label>
+                <input type="password" id="password"
+                    class="w-full bg-brand-dark border border-brand-gray rounded-lg p-3 focus:border-brand-accent outline-none"
+                    placeholder="admin123">
+            </div>
+            <button type="submit"
+                class="w-full py-3 bg-brand-accent text-white font-bold rounded-lg hover:bg-orange-600 transition-colors">Login</button>
+            <p id="error-msg" class="text-red-500 text-sm opacity-0 text-center">Invalid credentials</p>
+        </form>
+    </div>
+
+    <script src="./js/data.js"></script>
+    <script>
+        const form = document.getElementById('login-form');
+        const errorMsg = document.getElementById('error-msg');
+
+        if (DataService.isAdmin()) {
+            window.location.href = 'admin.html';
+        }
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const user = document.getElementById('username').value;
+            const pass = document.getElementById('password').value;
+
+            if (DataService.login(user, pass)) {
+                window.location.href = 'admin.html';
+            } else {
+                errorMsg.classList.remove('opacity-0');
+            }
+        });
+    </script>
+</body>
+
+</html>

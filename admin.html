@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Portfolio Admin</title>
+    <link href="./css/style.css" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body class="bg-brand-dark text-white">
+
+    <div class="flex h-screen overflow-hidden">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-brand-gray/20 border-r border-brand-gray flex flex-col">
+            <div class="p-6 border-b border-brand-gray">
+                <h1 class="text-xl font-bold">Admin Panel</h1>
+            </div>
+            <nav class="flex-1 p-4 space-y-2">
+                <button onclick="showSection('projects')"
+                    class="w-full text-left px-4 py-3 rounded-lg hover:bg-brand-gray/50 transition-colors flex items-center gap-2 active-nav"
+                    id="nav-projects">
+                    <i class="ph ph-briefcase"></i> Projects
+                </button>
+                <button onclick="showSection('skills')"
+                    class="w-full text-left px-4 py-3 rounded-lg hover:bg-brand-gray/50 transition-colors flex items-center gap-2"
+                    id="nav-skills">
+                    <i class="ph ph-lightning"></i> Skills
+                </button>
+            </nav>
+            <div class="p-4 border-t border-brand-gray">
+                <button onclick="logout()"
+                    class="w-full text-left px-4 py-3 rounded-lg hover:bg-red-500/10 text-red-400 hover:text-red-500 transition-colors flex items-center gap-2">
+                    <i class="ph ph-sign-out"></i> Logout
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 overflow-y-auto bg-brand-dark p-8">
+
+            <!-- Projects Section -->
+            <div id="section-projects" class="space-y-6">
+                <div class="flex justify-between items-center">
+                    <h2 class="text-2xl font-bold">Manage Projects</h2>
+                    <button onclick="openProjectModal()"
+                        class="px-4 py-2 bg-brand-accent rounded-lg text-white font-medium hover:bg-orange-600 transition-colors">
+                        <i class="ph ph-plus"></i> Add Project
+                    </button>
+                </div>
+
+                <div class="grid gap-4" id="projects-list">
+                    <!-- Projects rendered here -->
+                </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div id="section-skills" class="space-y-6 hidden">
+                <div class="flex justify-between items-center">
+                    <h2 class="text-2xl font-bold">Manage Skills</h2>
+                    <button onclick="openSkillModal()"
+                        class="px-4 py-2 bg-brand-accent rounded-lg text-white font-medium hover:bg-orange-600 transition-colors">
+                        <i class="ph ph-plus"></i> Add Skill
+                    </button>
+                </div>
+
+                <div class="grid gap-4" id="skills-list">
+                    <!-- Skills rendered here -->
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Project Modal -->
+    <div id="project-modal"
+        class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center">
+        <div class="bg-brand-gray rounded-xl p-8 w-full max-w-lg border border-brand-gray relative">
+            <button onclick="closeProjectModal()"
+                class="absolute top-4 right-4 text-brand-text-muted hover:text-white"><i
+                    class="ph ph-x text-xl"></i></button>
+            <h3 class="text-xl font-bold mb-6" id="project-modal-title">Add Project</h3>
+            <form id="project-form" class="space-y-4">
+                <input type="hidden" id="p-id">
+                <div>
+                    <label class="block text-sm mb-1">Title</label>
+                    <input type="text" id="p-title" class="w-full bg-brand-dark border border-brand-gray/50 rounded p-2"
+                        required>
+                </div>
+                <div>
+                    <label class="block text-sm mb-1">Image URL</label>
+                    <input type="text" id="p-image" class="w-full bg-brand-dark border border-brand-gray/50 rounded p-2"
+                        required placeholder="https://...">
+                </div>
+                <div>
+                    <label class="block text-sm mb-1">Description</label>
+                    <textarea id="p-desc" class="w-full bg-brand-dark border border-brand-gray/50 rounded p-2" rows="3"
+                        required></textarea>
+                </div>
+                <div>
+                    <label class="block text-sm mb-1">Tags (comma separated)</label>
+                    <input type="text" id="p-tags" class="w-full bg-brand-dark border border-brand-gray/50 rounded p-2"
+                        placeholder="React, Node, CSS">
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm mb-1">Demo Link</label>
+                        <input type="text" id="p-demo"
+                            class="w-full bg-brand-dark border border-brand-gray/50 rounded p-2" placeholder="#">
+                    </div>
+                    <div>
+                        <label class="block text-sm mb-1">Repo Link</label>
+                        <input type="text" id="p-repo"
+                            class="w-full bg-brand-dark border border-brand-gray/50 rounded p-2" placeholder="#">
+                    </div>
+                </div>
+                <button type="submit" class="w-full py-3 bg-brand-accent rounded mt-4 font-bold">Save Project</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Skill Modal -->
+    <div id="skill-modal"
+        class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center">
+        <div class="bg-brand-gray rounded-xl p-8 w-full max-w-md border border-brand-gray relative">
+            <button onclick="closeSkillModal()" class="absolute top-4 right-4 text-brand-text-muted hover:text-white"><i
+                    class="ph ph-x text-xl"></i></button>
+            <h3 class="text-xl font-bold mb-6" id="skill-modal-title">Add Skill</h3>
+            <form id="skill-form" class="space-y-4">
+                <input type="hidden" id="s-id">
+                <div>
+                    <label class="block text-sm mb-1">Skill Name</label>
+                    <input type="text" id="s-name" class="w-full bg-brand-dark border border-brand-gray/50 rounded p-2"
+                        required>
+                </div>
+                <div>
+                    <label class="block text-sm mb-1">Proficiency %</label>
+                    <input type="number" id="s-percent"
+                        class="w-full bg-brand-dark border border-brand-gray/50 rounded p-2" min="0" max="100" required>
+                </div>
+                <button type="submit" class="w-full py-3 bg-brand-accent rounded mt-4 font-bold">Save Skill</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./js/data.js"></script>
+    <script src="./js/admin.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Projects | Sanket Thakkar</title>
+    <link href="./css/style.css" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body class="overflow-x-hidden text-white bg-brand-dark">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 z-50 w-full transition-all duration-300 border-b bg-brand-dark/90 backdrop-blur-md border-brand-gray"
+        id="navbar">
+        <div class="container flex items-center justify-between px-6 py-4 mx-auto">
+            <a href="index.html" class="flex items-center gap-2 text-2xl font-bold">
+                Portfolio<span class="text-brand-accent">.</span>
+            </a>
+
+            <div class="items-center hidden gap-8 text-sm font-medium md:flex text-brand-text-muted">
+                <a href="index.html#home" class="transition-colors hover:text-white">Home</a>
+                <a href="index.html#about" class="transition-colors hover:text-white">About</a>
+                <a href="#" class="text-white transition-colors">Projects</a>
+                <a href="skills.html" class="transition-colors hover:text-white">Skills</a>
+                <a href="index.html#contact" class="transition-colors hover:text-white">Contact</a>
+            </div>
+
+            <a href="index.html#contact"
+                class="items-center justify-center hidden px-6 py-2 text-sm font-medium transition-all border rounded-full bg-brand-accent md:inline-flex border-brand-gray hover:bg-brand-gray hover:scale-105">
+                Hire Me
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button class="text-2xl md:hidden" id="menu-btn">
+                <i class="ph ph-list"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden absolute top-full left-0 w-full bg-brand-dark border-b  border-brand-gray py-4 px-6 flex flex-col gap-4 transform -translate-y-[150%] transition-transform duration-300"
+            id="mobile-menu">
+            <a href="index.html#home" class="block py-2">Home</a>
+            <a href="index.html#about" class="block py-2">About</a>
+            <a href="#" class="block py-2 text-white">Projects</a>
+            <a href="index.html#contact" class="block py-2">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="container px-6 pt-20 pb-12 mx-auto text-center">
+        <span class="block mb-2 font-sans text-sm tracking-widest uppercase text-brand-accent">Portfolio</span>
+        <h1 class="mb-6 text-4xl font-bold md:text-6xl">All Projects</h1>
+        <p class="max-w-xl mx-auto text-brand-text-muted">A collection of my work, featuring web applications, designs,
+            and experiments.</p>
+    </header>
+
+    <!-- Main Content -->
+    <main id="all-projects-container" class="container min-h-screen px-6 pb-20 mx-auto">
+        <!-- Projects Grid will be rendered here -->
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-container"></div>
+
+    <script src="./js/data.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
