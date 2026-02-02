@@ -428,7 +428,7 @@ function loadDynamicContent() {
         // We are on the Home Page
         dynamicContainer.innerHTML = `
             ${renderStats()}
-            ${renderProjects(2)} <!-- Show only first 4 projects -->
+            ${renderProjects(4)} <!-- Show only first 4 projects -->
             ${renderSkills()}
             ${renderContact()}
             ${renderFooter()}
