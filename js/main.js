@@ -7,16 +7,16 @@ const menuBtn = document.getElementById('menu-btn');
 const mobileMenu = document.getElementById('mobile-menu');
 const heroImg = document.getElementById("heroImg");
 
-function setHeroHeight() {
-  if (window.innerWidth >= 768) {
-    heroImg.style.height = "700px";
-  } else {
-    heroImg.style.height = "400px";
-  }
-}
+// function setHeroHeight() {
+//   if (window.innerWidth >= 768) {
+//     heroImg.style.height = "700px";
+//   } else {
+//     heroImg.style.height = "400px";
+//   }
+// }
 
 // page load pe
-setHeroHeight();
+// setHeroHeight();
 menuBtn.addEventListener('click', () => {
     mobileMenu.classList.toggle('-translate-y-[150%]');
 });
@@ -458,6 +458,8 @@ function loadDynamicContent() {
         footerContainer.innerHTML = renderFooter();
     }
 
+    console.log(DataService.getProjects());
+    console.log("hogya print")
     // Re-initialize animations for new content
     animateElements();
 }
