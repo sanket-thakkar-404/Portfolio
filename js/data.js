@@ -13,52 +13,60 @@ const STORAGE_KEYS = {
 
 // Initial Data Seeding
 const initialProjects = [
-    {
-        id: '1',
-        title: 'Chats Application',
-        description: 'A comprehensive dashboard for managing online stores.',
-        image: '../assets/images/chatWallpaer.png',
-        tags: ['React', 'Node.js', 'Tailwind' , 'Zustand' , 'Express' , "Cloudinary"],
-        demo: 'https://chat-app-inky-phi-82.vercel.app/',
-        repo: 'https://github.com/sanket-thakkar-404/chat_app'
-    },
-    {
-        id: '2',
-        title: 'E-commerce Website',
-        description: 'Real-time social platform with chat features.',
-        image: '/assets/images/E-commerce.png',
-        tags: ['React', 'Node.js', 'Tailwind' , 'Redux' , 'Express' , "Python"],
-        demo: '#',
-        repo: "https://github.com/sanket-thakkar-404/e-commerce-website"
-    },
-    {
-        id: '3',
-        title: 'Productivity Dashboard',
-        description: 'Real-time social platform with chat features.',
-        image: '/assets/images/ProductivityDashboard.png',
-        tags: ['React','Tailwind' , 'Redux'],
-        demo: 'https://productivity-dashboard-ruby.vercel.app/',
-        repo: 'https://github.com/sanket-thakkar-404/poultry-farm-project'
-    },
-    {
-        id: '4',
-        title: 'Uber Clone',
-        description: 'Real-time social platform with chat features.',
-        image: '/assets/images/uber-clone.png',
-        tags: ['React', 'Node.js', 'Tailwind' , 'Zustand' , 'Express' , "Cloudinary" , "gsap" ],
-        demo: '#',
-        repo: '#'
-    },
-    {
-        id: '5',
-        title: 'Poultry Farm Dashboard',
-        description: 'Real-time social platform with chat features.',
-        image: '/assets/images/PoultryFarm.png',
-        tags: ['React', 'Node.js', 'Tailwind' , 'Redux' , 'Express' , "Cloudinary" , "GoogleSheets" ],
-        demo: 'https://poultry-farm-project.vercel.app/',
-        repo: 'https://github.com/sanket-thakkar-404/poultry-farm-project'
-    },
-    
+  {
+    id: '1',
+    title: 'Chats Application',
+    description: 'A real-time chat application with authentication, media sharing, and online/offline status using Socket.io and Cloudinary.',
+    image: '../assets/images/chatWallpaer.png',
+    tags: ['React', 'Node.js', 'Tailwind', 'Zustand', 'Express', "Cloudinary"],
+    demo: 'https://chat-app-inky-phi-82.vercel.app/',
+    repo: 'https://github.com/sanket-thakkar-404/chat_app'
+  },
+  {
+    id: '2',
+    title: 'E-commerce Website',
+    description: 'Full-stack e-commerce platform with product listing, cart, checkout flow, and admin product management.',
+    image: '/assets/images/E-commerce.png',
+    tags: ['React', 'Node.js', 'Tailwind', 'Redux', 'Express', "Python"],
+    demo: '#',
+    repo: "https://github.com/sanket-thakkar-404/e-commerce-website"
+  },
+  {
+    id: '3',
+    title: 'Productivity Dashboard',
+    description: 'Task and time management dashboard with charts, filters, and real-time data visualization for daily productivity tracking.',
+    image: '/assets/images/ProductivityDashboard.png',
+    tags: ['React', 'Tailwind', 'Redux'],
+    demo: 'https://productivity-dashboard-ruby.vercel.app/',
+    repo: 'https://github.com/sanket-thakkar-404/poultry-farm-project'
+  },
+  {
+    id: '4',
+    title: 'Uber Clone',
+    description: 'Ride-booking web app clone with location search, driver-rider matching, animations, and live trip status updates.',
+    image: '/assets/images/uber-clone.png',
+    tags: ['React', 'Node.js', 'Tailwind', 'Zustand', 'Express', "Cloudinary", "gsap"],
+    demo: '#',
+    repo: '#'
+  },
+  {
+    id: '5',
+    title: 'Poultry Farm Dashboard',
+    description: 'Farm management system for tracking chicken weight, sales, stock, and billing integrated with Google Sheets backend.',
+    image: '/assets/images/PoultryFarm.png',
+    tags: ['React', 'Node.js', 'Tailwind', 'Redux', 'Express', "Cloudinary", "GoogleSheets"],
+    demo: 'https://poultry-farm-project.vercel.app/',
+    repo: 'https://github.com/sanket-thakkar-404/poultry-farm-project'
+  },
+  {
+    id: '6',
+    title: 'Portfolio Website',
+    description: 'Personal developer portfolio showcasing projects, skills, and contact integration with smooth UI animations.',
+    image: '/assets/images/Portfolio.png',
+    tags: ['React', 'Node.js', 'Tailwind'],
+    demo: '#',
+    repo: '#'
+  }
 ];
 
 const initialSkills = [
